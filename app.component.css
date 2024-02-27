@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Guerrilla&family=VT323&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color:hsl(from color h s l)
+}
+.frame{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.container {
+    height: 80dvh;
+    width:60%;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    border: 1px solid blue;
+    margin: 5dvh auto;
+    padding: 0;
+}
+
+.calculator-border {
+    width: 92%;
+    height: 94%;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns:repeat(4,minmax(min(6rem, 100%),1fr));
+    gap: .1em;
+    margin: 1em auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.monitor {
+    height: 80%;
+    width: 96%;
+    max-width: 500px;
+    border: 1px solid #000;
+    margin: .6em auto;
+    padding: 0 .5rem .5rem .5rem ;
+}
+.btn{
+    margin-left:0.08em;
+    max-width: 1.899dvw;    
+}
+button{
+    height: 11dvh;
+    min-width: 9dvw;      
+}
+
+.monitor-text{
+    font-family: "VT323", monospace;
+    font-size:2rem;
+    text-align: right;
+    justify-content: center;
+    padding-bottom: 0em;
+    
+}
